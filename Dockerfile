@@ -5,7 +5,7 @@ RUN pip install opencv-python-headless
 
 # Handle VTK
 RUN pip uninstall vtk -y && \
-    pip install --no-cache-dir --upgrade --extra-index-url https://gitlab.kitware.com/api/v4/projects/13/packages/pypi/simple vtk-osmesa
+    pip install --no-cache-dir --upgrade --extra-index-url https://wheels.pyvista.org vtk-osmesa
 
 WORKDIR $HOME
 
